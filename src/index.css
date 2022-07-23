@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(237, 242, 245);
+  overflow-y: hidden;
+}
+
+.image {
+  width: 12rem;
+  height: 70px;
+}
+.imagediv {
+  height: 70px;
+  padding-left: 1rem;
+
+}
+
+.navbar-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-title{
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+
+
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: auto;
+  align-items: center;
+  background-color: white;
+}
+
+.navigations {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 0rem 0.6rem;
+  color: rgb(88, 86, 86);
+}
+
+.wrapper {
+  list-style-type: none;
+  display: flex;
+}
+
+.menudiv {
+  padding-right: 1rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-right: 1rem;
+}
+
+.menudiv button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  color: rgb(65, 175, 219);
+}
+
+.menubutton {
+  font-size: 26px;
+  color: rgb(65, 175, 219);
+}
+
+.links {
+  padding: 0rem 1rem;
+  color: rgb(65, 175, 219);
+}
+
+.homediv,
+.aboutdiv,
+.projectsdiv,
+.contactdiv,
+.profilediv {
+  background-color: rgb(65, 175, 219);
+  color: black;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.contentdiv {
+  width: 40%;
+  height: 150px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contentdiv h4 {
+  color: rgb(83, 76, 76);
+}
+
+.smallnavdiv {
+  display: none;
+  width: 100%;
+  height: 0px;
+  transition: all ease-in-out 1000ms;
+  background-color: white;
+  list-style: none;
+}
+
+.smallspan {
+  text-decoration: none;
+}
+
+.smallnav {
+  text-decoration: none;
+}
+
+
+@media (max-width: 799px) {
+  .navigationdiv {
+    display: flex;
+    height: 0rem;
+    width: 100%;
+    transition: all ease-in-out 500ms;
+    overflow: hidden;
+
+  }
+
+  .navigations {
+    padding: 0rem;
+    width: 100%;
+  }
+
+  .show-navigationdiv{
+    height: 12.2rem;
+
+  }
+  .wrappernavs{
+    padding: 0.6rem 1rem;
+    width: 100%;
+  }
+  .wrappernavs p{
+     transition: all ease-out 300ms;
+  }
+
+  .wrappernavs p:hover{
+    transform: translateX(10px);
+    transition: all ease-in 300ms;
+  }
+
+  .wrappernavs:hover{
+     background-color: rgb(161, 206, 224);
+  }
+
+  .wrapper {
+    flex-direction: column;
+    width: 100%;
+   
+  }
+
+  .nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  
+}
+
+  .linksdiv {
+    display: none;
+  }
+
+  .menudiv {
+    display: flex;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+}
